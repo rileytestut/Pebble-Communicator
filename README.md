@@ -7,7 +7,7 @@ This initial version is very limited, as it was made more to demonstrate that wi
 
 __How To Use__
 
-1. Make sure your Pebble is connected to you iOS Device.
+1. Make sure your Pebble is connected to your iOS Device.
 2. Launch Pebble Communicator.
 3. On the Pebble, press the "Next" and "Previous" track buttons to select a character, and then press "Play" to type the letter.
 
