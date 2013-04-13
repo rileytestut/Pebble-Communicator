@@ -1,3 +1,0 @@
-[submodule "libid3-ios"]
-	path = libid3-ios
-	url = git://github.com/rjyo/libid3-ios.git
