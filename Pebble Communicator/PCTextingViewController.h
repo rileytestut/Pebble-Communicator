@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PCFirstViewController : UIViewController
+@interface PCTextingViewController : UIViewController
 
 @end
