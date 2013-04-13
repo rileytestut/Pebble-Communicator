@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF4204E21718EEEE005B999E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4204E11718EEEE005B999E /* MessageUI.framework */; };
+		BF4204E41718FD85005B999E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4204E31718FD85005B999E /* CoreTelephony.framework */; };
+		BF4204E81718FF94005B999E /* ChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4204E71718FF94005B999E /* ChatKit.framework */; };
 		BF874FC31717731100B18321 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF874FC21717731100B18321 /* UIKit.framework */; };
 		BF874FC51717731100B18321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF874FC41717731100B18321 /* Foundation.framework */; };
 		BF874FC71717731100B18321 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF874FC61717731100B18321 /* CoreGraphics.framework */; };
@@ -17,7 +20,7 @@
 		BF874FD71717731100B18321 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF874FD61717731100B18321 /* Default@2x.png */; };
 		BF874FD91717731100B18321 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF874FD81717731100B18321 /* Default-568h@2x.png */; };
 		BF874FDC1717731100B18321 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF874FDA1717731100B18321 /* MainStoryboard.storyboard */; };
-		BF874FDF1717731100B18321 /* PCTextingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF874FDE1717731100B18321 /* PCTextingViewController.mm */; };
+		BF874FDF1717731100B18321 /* PCTextingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF874FDE1717731100B18321 /* PCTextingViewController.m */; };
 		BF874FE11717731100B18321 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BF874FE01717731100B18321 /* first.png */; };
 		BF874FE31717731100B18321 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF874FE21717731100B18321 /* first@2x.png */; };
 		BF874FE61717731100B18321 /* PCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF874FE51717731100B18321 /* PCSecondViewController.m */; };
@@ -31,6 +34,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF4204E11718EEEE005B999E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		BF4204E31718FD85005B999E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BF4204E61718FF60005B999E /* CKSMSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSService.h; sourceTree = "<group>"; };
+		BF4204E71718FF94005B999E /* ChatKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChatKit.framework; path = System/Library/PrivateFrameworks/ChatKit.framework; sourceTree = SDKROOT; };
+		BF4204E91718FFC4005B999E /* CKService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKService.h; sourceTree = "<group>"; };
+		BF4204EB17190095005B999E /* CKConversation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKConversation.h; sourceTree = "<group>"; };
+		BF4204EC17190095005B999E /* CKConversationList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKConversationList.h; sourceTree = "<group>"; };
+		BF4204ED17190095005B999E /* CKEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKEntity.h; sourceTree = "<group>"; };
+		BF4204EE17190095005B999E /* CKMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKMessage.h; sourceTree = "<group>"; };
+		BF4204EF17190095005B999E /* CKSMSEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSMSEntity.h; sourceTree = "<group>"; };
+		BF4204F017190095005B999E /* CKSMSMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSMSMessage.h; sourceTree = "<group>"; };
 		BF874FBF1717731100B18321 /* Pebble Communicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pebble Communicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF874FC21717731100B18321 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF874FC41717731100B18321 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,13 +60,15 @@
 		BF874FD81717731100B18321 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF874FDB1717731100B18321 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BF874FDD1717731100B18321 /* PCTextingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCTextingViewController.h; sourceTree = "<group>"; };
-		BF874FDE1717731100B18321 /* PCTextingViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PCTextingViewController.mm; sourceTree = "<group>"; };
+		BF874FDE1717731100B18321 /* PCTextingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCTextingViewController.m; sourceTree = "<group>"; };
 		BF874FE01717731100B18321 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BF874FE21717731100B18321 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		BF874FE41717731100B18321 /* PCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCSecondViewController.h; sourceTree = "<group>"; };
 		BF874FE51717731100B18321 /* PCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCSecondViewController.m; sourceTree = "<group>"; };
 		BF874FE71717731100B18321 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BF874FE91717731100B18321 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BFA15D141719B17E00DFC5AE /* CKMessageStandaloneComposition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKMessageStandaloneComposition.h; sourceTree = "<group>"; };
+		BFA15D151719B32200DFC5AE /* CKMessageComposition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKMessageComposition.h; sourceTree = "<group>"; };
 		BFD0EEE517188F480048132B /* characters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = characters.txt; sourceTree = "<group>"; };
 		BFD0EEE7171892B10048132B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BFD0EEEB171894D30048132B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -65,21 +81,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4204E41718FD85005B999E /* CoreTelephony.framework in Frameworks */,
+				BF4204E21718EEEE005B999E /* MessageUI.framework in Frameworks */,
 				BFD0EF0D1718DFBF0048132B /* MediaPlayer.framework in Frameworks */,
 				BFD0EEEC171894D30048132B /* AudioToolbox.framework in Frameworks */,
 				BFD0EEE8171892B20048132B /* AVFoundation.framework in Frameworks */,
 				BF874FC31717731100B18321 /* UIKit.framework in Frameworks */,
 				BF874FC51717731100B18321 /* Foundation.framework in Frameworks */,
 				BF874FC71717731100B18321 /* CoreGraphics.framework in Frameworks */,
+				BF4204E81718FF94005B999E /* ChatKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF4204EA17190083005B999E /* ChatKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF4204E61718FF60005B999E /* CKSMSService.h */,
+				BF4204E91718FFC4005B999E /* CKService.h */,
+				BF4204EB17190095005B999E /* CKConversation.h */,
+				BF4204EC17190095005B999E /* CKConversationList.h */,
+				BF4204ED17190095005B999E /* CKEntity.h */,
+				BF4204EE17190095005B999E /* CKMessage.h */,
+				BFA15D151719B32200DFC5AE /* CKMessageComposition.h */,
+				BFA15D141719B17E00DFC5AE /* CKMessageStandaloneComposition.h */,
+				BF4204EF17190095005B999E /* CKSMSEntity.h */,
+				BF4204F017190095005B999E /* CKSMSMessage.h */,
+			);
+			name = ChatKit;
+			sourceTree = "<group>";
+		};
 		BF874FB61717731100B18321 = {
 			isa = PBXGroup;
 			children = (
+				BF4204E31718FD85005B999E /* CoreTelephony.framework */,
+				BF4204E11718EEEE005B999E /* MessageUI.framework */,
 				BFD0EF0C1718DFBF0048132B /* MediaPlayer.framework */,
 				BF874FC81717731100B18321 /* Pebble Communicator */,
 				BF874FC11717731100B18321 /* Frameworks */,
@@ -114,13 +152,15 @@
 				BF874FD21717731100B18321 /* PCAppDelegate.m */,
 				BF874FDA1717731100B18321 /* MainStoryboard.storyboard */,
 				BF874FDD1717731100B18321 /* PCTextingViewController.h */,
-				BF874FDE1717731100B18321 /* PCTextingViewController.mm */,
+				BF874FDE1717731100B18321 /* PCTextingViewController.m */,
+				BF4204EA17190083005B999E /* ChatKit */,
 				BF874FE01717731100B18321 /* first.png */,
 				BF874FE21717731100B18321 /* first@2x.png */,
 				BF874FE41717731100B18321 /* PCSecondViewController.h */,
 				BF874FE51717731100B18321 /* PCSecondViewController.m */,
 				BF874FE71717731100B18321 /* second.png */,
 				BF874FE91717731100B18321 /* second@2x.png */,
+				BF4204E71718FF94005B999E /* ChatKit.framework */,
 				BF874FC91717731100B18321 /* Supporting Files */,
 			);
 			path = "Pebble Communicator";
@@ -217,7 +257,7 @@
 			files = (
 				BF874FCF1717731100B18321 /* main.m in Sources */,
 				BF874FD31717731100B18321 /* PCAppDelegate.m in Sources */,
-				BF874FDF1717731100B18321 /* PCTextingViewController.mm in Sources */,
+				BF874FDF1717731100B18321 /* PCTextingViewController.m in Sources */,
 				BF874FE61717731100B18321 /* PCSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +348,10 @@
 		BF874FEE1717731100B18321 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pebble Communicator/Pebble Communicator-Prefix.pch";
 				INFOPLIST_FILE = "Pebble Communicator/Pebble Communicator-Info.plist";
@@ -319,6 +363,10 @@
 		BF874FEF1717731100B18321 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pebble Communicator/Pebble Communicator-Prefix.pch";
 				INFOPLIST_FILE = "Pebble Communicator/Pebble Communicator-Info.plist";
